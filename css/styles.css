@@ -113,6 +113,8 @@ img {
 }
 
 .site-nav .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   display: block;
   color: var(--title-text-color);
 
@@ -144,14 +146,16 @@ img {
 .contacts-nav .link {
   display: flex;
   align-items: center;
-  color: var(--primery-text-color);
-  fill: var(--primery-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: var(--primery-text-color);
+  fill: var(--primery-text-color);
 }
 
 .contact-icon1 {
@@ -374,8 +378,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #afb1b8;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  fill: #afb1b8;
 }
 
 .social-links .icon {
@@ -421,6 +428,7 @@ img {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: rgba(175, 177, 184, 1);
 }
 
@@ -462,6 +470,7 @@ address {
 }
 
 .address-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primery-white-color);
 
   font-size: 14px;
@@ -470,6 +479,7 @@ address {
 }
 
 .contact-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;
@@ -515,6 +525,8 @@ address {
   align-items: center;
   width: 100%;
   height: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primery-white-color);
   border-radius: 50%;
@@ -546,8 +558,9 @@ address {
 
 .btn-secondary {
   display: block;
-  background-color: var(--secondary-bg-color);
-  color: var(--title-text-color);
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: inherit;
   font-weight: 500;
@@ -556,7 +569,8 @@ address {
   letter-spacing: 0.03em;
   text-align: center;
 
-  padding: 6px 22px;
+  background-color: var(--secondary-bg-color);
+  color: var(--title-text-color);
 }
 
 .btn-secondary:hover,
@@ -591,6 +605,7 @@ address {
 .projects-link {
   display: flex;
   flex-direction: column;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 

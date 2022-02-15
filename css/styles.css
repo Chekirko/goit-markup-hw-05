@@ -131,7 +131,31 @@ img {
 }
 
 .site-nav .link.current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.current-studio::after {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  top: 46px;
+  left: 0;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.current-portfolio::after {
+  content: '';
+  position: absolute;
+  width: 78px;
+  height: 4px;
+  top: 46px;
+  left: 0;
+
+  background: #2196f3;
+  border-radius: 2px;
 }
 
 .contacts-nav {

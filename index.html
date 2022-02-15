@@ -44,7 +44,7 @@
             <div class="container">
                 <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
 
-                <button type="button" class="btn btn-primery">Заказать услугу</button>
+                <button type="button" class="btn btn-primery" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -289,6 +289,15 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal"><button type="button" class="modal-btn" data-modal-close>
+                <div class="modal-icon"><svg width="18px" hight="18px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"
+                            fill="#000" />
+                    </svg></div>
+            </button></div>
+    </div>
     <script src="./modal.js"></script>
 </body>
 
